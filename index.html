@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kingsukh Guest House</title>
+  <meta name="description"
+    content="Kingsukh Guest House - Your ideal destination for a relaxing stay in Manpur, Baranti near Baranti Hill and Baranti Lake. Enjoy comfort, scenic views, and excellent hospitality.">
+  <meta name="keywords"
+    content="guest house, Baranti, Purulia, hotel, Kingsukh Guest House, Baranti Dam, Barhanti, rooms, booking, West Bengal">
+  <meta property="og:title" content="Kingsukh Guest House">
+  <meta property="og:description"
+    content="Your ideal destination for a relaxing stay in Manpur, Baranti near Baranti Hill and Baranti Lake.">
+  <meta property="og:image" content="https://www.kingsukhguesthouse.com/assets/baranti.webp">
+  <meta property="og:url" content="https://www.kingsukhguesthouse.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .wave-divider {
+      position: relative;
+      width: 100%;
+      height: 80px;
+      overflow: hidden;
+    }
+    .wave-divider svg {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .nav-blur {
+      background: #14325a;
+      backdrop-filter: blur(8px);
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+    .nav-blur .nav-link,
+    .nav-blur .nav-logo {
+      text-shadow: 5px 1px 12px rgba(20, 50, 90, 0.2);
+    }
+    @media (max-width: 768px) {
+      .nav-blur {
+        background: rgba(20, 50, 90, 0.85) !important;
+        /* More transparent on mobile */
+      }
+      #mobile-menu {
+        background: rgba(20, 50, 90, 0.92) !important;
+        backdrop-filter: blur(8px);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-b from-sky-200 via-white to-blue-100 text-gray-900 font-sans">
+
+  <!-- Navbar -->
+  <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-transparent">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#home" class="text-2xl font-bold nav-logo text-white drop-shadow-lg">Kingsukh Guest House</a>
+      <nav class="hidden md:flex gap-6 font-medium">
+        <a href="#home" class="nav-link text-white hover:text-yellow-300 transition">Home</a>
+        <a href="#about" class="nav-link text-white hover:text-yellow-300 transition">About</a>
+        <a href="#gallery" class="nav-link text-white hover:text-yellow-300 transition">Gallery</a>
+        <a href="#rooms" class="nav-link text-white hover:text-yellow-300 transition">Rooms</a>
+        <a href="#service" class="nav-link text-white hover:text-yellow-300 transition">Services</a>
+        <a href="#contact" class="nav-link text-white hover:text-yellow-300 transition">Contact</a>
+      </nav>
+      <a href="https://wa.link/at5ion" class="hidden md:block">
+        <button class="bg-yellow-400 text-blue-900 px-4 py-2 rounded hover:bg-yellow-300 font-semibold shadow">Book
+          Now</button>
+      </a>
+      <button id="menu-btn" class="md:hidden text-white text-3xl">
+        <i class="ri-menu-line"></i>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden px-4 pb-4">
+      <a href="#home" class="block py-2 text-white mobile-nav-link">Home</a>
+      <a href="#about" class="block py-2 text-white mobile-nav-link">About</a>
+      <a href="#gallery" class="block py-2 text-white mobile-nav-link">Gallery</a>
+      <a href="#rooms" class="block py-2 text-white mobile-nav-link">Rooms</a>
+      <a href="#service" class="block py-2 text-white mobile-nav-link">Services</a>
+      <a href="#contact" class="block py-2 text-white mobile-nav-link">Contact</a>
+    </div>
+  </header>
+  
+  <!-- Hero Section -->
+  <section id="home" class="relative h-screen flex items-center justify-center bg-cover bg-center"
+    style="background-image: url('assets/baranti.webp');">
+    <div class="absolute inset-0 bg-gradient-to-b from-blue-900/70 via-blue-700/30 to-transparent"></div>
+    <div class="relative z-10 text-center px-6 flex flex-col items-center" data-aos="fade-up">
+      <p class="text-white text-xl mb-2 opacity-80">Simple - Unique - Friendly</p>
+      <h1 class="text-white text-3xl md:text-7xl font-extrabold leading-tight drop-shadow-lg mb-4">
+        Make Yourself At Home<br>In Our <span class="text-yellow-300">Guest House</span>
+      </h1>
+      <p class="text-white text-xl md:text-2xl mb-8 drop-shadow">
+        Kingsukh Guest House - Your ideal destination for a relaxing stay in Manpur, Baranti near Baranti Hill and
+        Baranti Lake. Enjoy comfort, scenic views, and excellent hospitality.
+      </p>
+      <a href="https://wa.link/at5ion">
+        <button
+          class="bg-yellow-400 text-blue-900 px-8 py-3 rounded-lg font-bold text-lg hover:bg-yellow-300 shadow-lg transition">Book
+          Your Escape</button>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="relative py-20 bg-gradient-to-br from-white via-blue-50 to-sky-100">
+    <div class="max-w-6xl mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center gap-12" data-aos="fade-up">
+      <img src="assets/out.jpg" alt="Kingsukh Guest House"
+        class="w-full md:w-1/2 rounded-3xl shadow-xl object-cover h-96" />
+      <div class="md:w-1/2">
+        <h2 class="text-4xl font-bold text-blue-900 mb-4">The Best Holidays Start Here!</h2>
+        <p class="text-gray-700 text-lg leading-relaxed mb-4">
+          Embark on a tranquil journey at our Kingsukh Guest House, enveloped by the scenic allure of Biharinath Hill,
+          Baranti Hill, Susunia Hill, Joychandi Hill, Garhpanchkot, Baranti Dam, Maithon Dam, and the captivating
+          Panchat Dam. Revel in the embrace of comfort, relish delightful meals, and unwind in our verdant garden oasis.
+          Your ideal retreat beckons, promising a harmonious blend of nature's beauty and heartfelt hospitality. Explore
+          the hidden gems of Purulia, creating memories that linger long after your stay.
+        </p>
+        <ul class="mb-6 space-y-2 text-blue-800">
+          <li><i class="ri-map-pin-2-fill text-xl text-yellow-400"></i> <a
+              href="https://maps.app.goo.gl/7wYUEB4tvR7NMHbcA" class="underline">Beside Barshal Water Tank, Manpur,
+              Barhanti, West Bengal 723156</a></li>
+          <li><i class="ri-phone-fill text-xl text-yellow-400"></i> <a href="tel:+919007062180" class="underline">+91
+              9007062180</a></li>
+        </ul>
+        <a href="#gallery"
+          class="inline-block bg-blue-900 text-white px-6 py-2 rounded hover:bg-blue-800 transition">See the Views</a>
+      </div>
+    </div>
+    <div class="wave-divider">
+      <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#e0f2fe" fill-opacity="1"
+          d="M0,32L48,42.7C96,53,192,75,288,74.7C384,75,480,53,576,37.3C672,21,768,11,864,21.3C960,32,1056,64,1152,74.7C1248,85,1344,75,1392,69.3L1440,64L1440,80L1392,80C1344,80,1248,80,1152,80C1056,80,960,80,864,80C768,80,672,80,576,80C480,80,384,80,288,80C192,80,96,80,48,80L0,80Z">
+        </path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-20 bg-sky-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-blue-900 mb-8 text-center" data-aos="fade-up">Gallery: Your Window to Baranti
+      </h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/out.jpg" alt=""
+          class="rounded-xl shadow-lg object-cover h-48 w-full hover:scale-105 transition" />
+        <img src="assets/ayodhya.webp" alt=""
+          class="rounded-xl shadow-lg object-cover h-48 w-full hover:scale-105 transition" />
+        <img src="assets/large.jpg" alt=""
+          class="rounded-xl shadow-lg object-cover h-48 w-full hover:scale-105 transition" />
+        <img src="assets/palash.webp" alt=""
+          class="rounded-xl shadow-lg object-cover h-48 w-full hover:scale-105 transition" />
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-6" data-aos="fade-up" data-aos-delay="200">
+        <img src="assets/small.jpg" alt=""
+          class="rounded-xl shadow-lg object-cover h-48 w-full hover:scale-105 transition" />
+        <img src="assets/baranti.webp" alt=""
+          class="rounded-xl shadow-lg object-cover h-48 w-full hover:scale-105 transition" />
+        <img src="assets/recep.jpg" alt=""
+          class="rounded-xl shadow-lg object-cover h-48 w-full hover:scale-105 transition" />
+        <img src="assets/flower.jpg" alt=""
+          class="rounded-xl shadow-lg object-cover h-48 w-full hover:scale-105 transition" />
+      </div>
+    </div>
+    <div class="wave-divider">
+      <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#fff" fill-opacity="1"
+          d="M0,32L48,42.7C96,53,192,75,288,74.7C384,75,480,53,576,37.3C672,21,768,11,864,21.3C960,32,1056,64,1152,74.7C1248,85,1344,75,1392,69.3L1440,64L1440,80L1392,80C1344,80,1248,80,1152,80C1056,80,960,80,864,80C768,80,672,80,576,80C480,80,384,80,288,80C192,80,96,80,48,80L0,80Z">
+        </path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Rooms Section -->
+  <section id="rooms" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-blue-900 mb-8 text-center" data-aos="fade-up">OUR LIVING ROOM</h2>
+      <div class="grid md:grid-cols-2 gap-8" data-aos="fade-up" data-aos-delay="100">
+        <!-- Room Card 1 -->
+        <div class="bg-sky-50 rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+          <img src="assets/small.jpg" alt="Cozy Haven Room" class="w-full md:w-1/2 object-cover h-60" />
+          <div class="p-8 flex flex-col justify-between">
+            <div>
+              <h3 class="text-2xl font-semibold mb-2 text-blue-900">Cozy Haven Room</h3>
+              <p class="mb-2 text-gray-600">Escape to comfort in our Cozy Haven Room, a snug retreat designed for
+                intimate relaxation.</p>
+              <p class="mb-4 text-blue-900 font-bold">Starting from <span class="text-yellow-500">Rs. 1000/night</span>
+              </p>
+            </div>
+            <a href="https://wa.link/at5ion">
+              <button class="bg-yellow-400 text-blue-900 px-4 py-2 rounded hover:bg-yellow-300 transition">Book
+                Now</button>
+            </a>
+          </div>
+        </div>
+        <!-- Room Card 2 -->
+        <div class="bg-sky-50 rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+          <img src="assets/large.jpg" alt="Spacious Serenity Suite" class="w-full md:w-1/2 object-cover h-60" />
+          <div class="p-8 flex flex-col justify-between">
+            <div>
+              <h3 class="text-2xl font-semibold mb-2 text-blue-900">Spacious Serenity Suite</h3>
+              <p class="mb-2 text-gray-600">Indulge in luxury and ample space in our Spacious Serenity Suite, where
+                tranquility meets roomy elegance.</p>
+              <p class="mb-4 text-blue-900 font-bold">Starting from <span class="text-yellow-500">Rs. 1500/night</span>
+              </p>
+            </div>
+            <a href="https://wa.link/at5ion">
+              <button class="bg-yellow-400 text-blue-900 px-4 py-2 rounded hover:bg-yellow-300 transition">Book
+                Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wave-divider">
+      <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#e0f2fe" fill-opacity="1"
+          d="M0,32L48,42.7C96,53,192,75,288,74.7C384,75,480,53,576,37.3C672,21,768,11,864,21.3C960,32,1056,64,1152,74.7C1248,85,1344,75,1392,69.3L1440,64L1440,80L1392,80C1344,80,1248,80,1152,80C1056,80,960,80,864,80C768,80,672,80,576,80C480,80,384,80,288,80C192,80,96,80,48,80L0,80Z">
+        </path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="service" class="py-20 bg-sky-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-blue-900 mb-8 text-center" data-aos="fade-up">SERVICES</h2>
+      <div class="grid md:grid-cols-4 gap-8 text-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:scale-105 transition">
+          <i class="ri-shield-star-line text-4xl text-yellow-500 mb-2"></i>
+          <p class="font-semibold">High Class Security</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:scale-105 transition">
+          <i class="ri-24-hours-line text-4xl text-yellow-500 mb-2"></i>
+          <p class="font-semibold">24 Hours Room Service</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:scale-105 transition">
+          <i class="ri-restaurant-2-fill text-4xl text-yellow-500 mb-2"></i>
+          <p class="font-semibold">Restaurant</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:scale-105 transition">
+          <i class="ri-map-2-line text-4xl text-yellow-500 mb-2"></i>
+          <p class="font-semibold">Tourist Guide Support</p>
+        </div>
+      </div>
+    </div>
+    <div class="wave-divider">
+      <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#fff" fill-opacity="1"
+          d="M0,32L48,42.7C96,53,192,75,288,74.7C384,75,480,53,576,37.3C672,21,768,11,864,21.3C960,32,1056,64,1152,74.7C1248,85,1344,75,1392,69.3L1440,64L1440,80L1392,80C1344,80,1248,80,1152,80C1056,80,960,80,864,80C768,80,672,80,576,80C480,80,384,80,288,80C192,80,96,80,48,80L0,80Z">
+        </path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-blue-900 mb-8 text-center" data-aos="fade-up">Contact & Booking</h2>
+      <div class="flex flex-col md:flex-row gap-10" data-aos="fade-up" data-aos-delay="100">
+        <div class="md:w-1/2 space-y-4">
+          <div>
+            <span class="font-semibold">Address:</span>
+            <a href="https://maps.app.goo.gl/7wYUEB4tvR7NMHbcA" class="text-blue-700 underline">Beside Barshal Water
+              Tank, Manpur, Barhanti, West Bengal 723156</a>
+          </div>
+          <div>
+            <span class="font-semibold">Email:</span>
+            <a href="mailto:kkghosh0099@gmail.com" class="text-blue-700 underline">kkghosh0099@gmail.com</a>
+          </div>
+          <div>
+            <span class="font-semibold">Phone:</span>
+            <a href="tel:+919007062180" class="text-blue-700 underline">+91 9007062180</a>
+          </div>
+          <div class="flex gap-4 mt-4">
+            <a href="#"><i class="ri-facebook-circle-fill text-3xl text-blue-700"></i></a>
+            <a href="https://www.instagram.com/kingsukhguesthouse/" target="_blank"><i
+                class="ri-instagram-line text-3xl text-pink-500"></i></a>
+            <a href="#"><i class="ri-twitter-x-line text-3xl text-blue-500"></i></a>
+          </div>
+        </div>
+        <form class="md:w-1/2 bg-sky-50 rounded-lg shadow-lg p-8 space-y-4">
+          <div class="flex gap-4">
+            <input type="text" placeholder="First Name" class="w-1/2 border border-gray-300 rounded px-3 py-2" required>
+            <input type="text" placeholder="Last Name" class="w-1/2 border border-gray-300 rounded px-3 py-2" required>
+          </div>
+          <input type="email" placeholder="Email Address" class="w-full border border-gray-300 rounded px-3 py-2"
+            required>
+          <input type="text" placeholder="Mobile Number" class="w-full border border-gray-300 rounded px-3 py-2"
+            required>
+          <textarea placeholder="Write your message here..." class="w-full border border-gray-300 rounded px-3 py-2"
+            required></textarea>
+          <button type="submit"
+            class="bg-blue-900 text-white px-6 py-2 rounded hover:bg-blue-700 transition">Send</button>
+        </form>
+      </div>
+      <div class="mt-10 rounded-lg overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="200">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5017351225647!2d86.85721547510981!3d23.586332378782714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6e3fdd3ff9ebb%3A0x517a57e3f93c1807!2sKingsukh%20Guest%20House!5e0!3m2!1sen!2sin!4v1705088034844!5m2!1sen!2sin"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+    <div class="wave-divider">
+      <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#e0f2fe" fill-opacity="1"
+          d="M0,32L48,42.7C96,53,192,75,288,74.7C384,75,480,53,576,37.3C672,21,768,11,864,21.3C960,32,1056,64,1152,74.7C1248,85,1344,75,1392,69.3L1440,64L1440,80L1392,80C1344,80,1248,80,1152,80C1056,80,960,80,864,80C768,80,672,80,576,80C480,80,384,80,288,80C192,80,96,80,48,80L0,80Z">
+        </path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white pt-12 pb-6">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <!-- Brand & Description -->
+      <div>
+        <h2 class="text-2xl font-bold mb-4 leading-tight tracking-wide">Kingsukh<br>Guest House</h2>
+        <p class="mb-6 text-blue-100 text-base">
+          Discover a world of comfort, luxury, and adventure as you explore our curated selection of hotels, making
+          every moment of your getaway truly extraordinary.
+        </p>
+        <a href="https://wa.link/at5ion">
+          <button
+            class="bg-yellow-400 hover:bg-yellow-300 text-blue-900 px-8 py-3 rounded-lg font-bold text-lg shadow transition">BOOK
+            NOW</button>
+        </a>
+      </div>
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4 tracking-wide">QUICK LINKS</h3>
+        <ul class="space-y-2 text-blue-100">
+          <li><a href="#" class="hover:text-yellow-300 transition">Browse Destinations</a></li>
+          <li><a href="#" class="hover:text-yellow-300 transition">Special Offers &amp; Packages</a></li>
+          <li><a href="#" class="hover:text-yellow-300 transition">Room Types &amp; Amenities</a></li>
+          <li><a href="#" class="hover:text-yellow-300 transition">Customer Reviews &amp; Ratings</a></li>
+          <li><a href="#" class="hover:text-yellow-300 transition">Travel Tips &amp; Guides</a></li>
+        </ul>
+      </div>
+      <!-- Our Services -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4 tracking-wide">OUR SERVICES</h3>
+        <ul class="space-y-2 text-blue-100">
+          <li><i class="ri-user-star-line text-yellow-400 mr-2"></i>Concierge Assistance</li>
+          <li><i class="ri-calendar-check-line text-yellow-400 mr-2"></i>Flexible Booking Options</li>
+          <li><i class="ri-bus-2-line text-yellow-400 mr-2"></i>Airport Transfers</li>
+          <li><i class="ri-heart-pulse-line text-yellow-400 mr-2"></i>Wellness &amp; Recreation</li>
+        </ul>
+      </div>
+      <!-- Contact Us -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4 tracking-wide">CONTACT US</h3>
+        <ul class="space-y-2 text-blue-100 mb-4 text-base">
+          <li>
+            <i class="ri-map-pin-2-fill text-yellow-400 mr-2"></i>
+            <a href="https://maps.app.goo.gl/7wYUEB4tvR7NMHbcA" target="_blank" rel="noopener"
+              class="hover:text-yellow-300 transition">
+              Address: Beside Barshal Water Tank,<br>Manpur, Barhanti, West Bengal 723156
+            </a>
+          </li>
+          <li>
+            <i class="ri-mail-fill text-yellow-400 mr-2"></i>
+            <a href="mailto:kkghosh0099@gmail.com" class="hover:text-yellow-300 transition">kkghosh0099@gmail.com</a>
+          </li>
+          <li>
+            <i class="ri-phone-fill text-yellow-400 mr-2"></i>
+            <a href="tel:+919007062180" class="hover:text-yellow-300 transition">+91 9007062180</a>
+          </li>
+        </ul>
+        <div class="flex gap-3 mt-2">
+          <a href="#" target="_blank" aria-label="Facebook">
+            <i class="ri-facebook-circle-fill text-2xl hover:text-yellow-300 transition transform hover:scale-110"></i>
+          </a>
+          <a href="https://www.instagram.com/kingsukhguesthouse/" target="_blank" aria-label="Instagram">
+            <i class="ri-instagram-line text-2xl hover:text-yellow-300 transition transform hover:scale-110"></i>
+          </a>
+          <a href="#" target="_blank" aria-label="YouTube">
+            <i class="ri-youtube-fill text-2xl hover:text-yellow-300 transition transform hover:scale-110"></i>
+          </a>
+          <a href="#" target="_blank" aria-label="Twitter">
+            <i class="ri-twitter-x-line text-2xl hover:text-yellow-300 transition transform hover:scale-110"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center text-blue-200 mt-10 text-sm tracking-wide">
+      Copyright © 2024 Kingsukh Guest House. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- JS & Animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    // Navbar background on scroll
+    window.addEventListener('scroll', function () {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 60) {
+        navbar.classList.add('nav-blur', 'shadow-lg');
+      } else {
+        navbar.classList.remove('nav-blur', 'shadow-lg');
+      }
+    });
+    // Mobile menu toggle
+    document.getElementById('menu-btn').onclick = function () {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    }
+    // Hide mobile menu after clicking a link
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', function () {
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+  </script>
+</body>
+
+</html>
